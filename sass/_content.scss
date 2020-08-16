@@ -1,6 +1,4 @@
 .content {
-    // padding:10px;
-    // background: lightgray;
     &__title {
         @include text-style (24px,gray);
         &--small {

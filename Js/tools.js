@@ -26,8 +26,8 @@ const demo = new Vue({
 		makeActive: function(item){
 			// Когда модель будет изменена, представление обновится.
             this.active = item;
-            $('.content__info').hide()
-            $(`#${item}`).show()
+            $('.content__info').hide();
+            $(`#${item}`).show();
 		}
 	}
 });
@@ -37,5 +37,5 @@ const myTemplate = new Vue({
     el: '#app',
     data: {
         status: "on"
-    },
+    }
 })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,17 +21,12 @@
                     <a href="#" class="content__vue" v-on:click="makeActive('vue')">Vue.js</a>
                     <a href="#" class="content__bpm" v-on:click="makeActive('bpm')">BPM</a>
                 </nav>
-            
-                 <!-- Шаблонное значение будет заменено на значение переменной "active". Все изменения будут автоматически отражены на странице. -->
             </div>
             <div class="content__info" id="about" style="display: block;">
                 <header class="description">
-                    <img class="description__img" src="upload/me.jpg">
+                    <img class="description__img" src="upload/me.jpg" alt="img">
                     <h1 class="description__title">Abdranbayev Azamat</h1>
                     <h3 class="description__text">Talented Web Developer</h3>
-                    <!-- <a class="header__button" href="docs/cv.pdf" target="_blank" download>
-                        <p class="header__text header__text--inner--button">Download My Cv</p>
-                    </a> -->
                     <a class="description__button" v-bind:href="url" target="_blank">
                         <p class="description__text description__text--inner--button">Download My Cv</p>
                     </a>
@@ -99,7 +94,6 @@
                             ABC Анализ
                         </p>
                     </div>
-                   
                 </div>
             </div>
             <div class="content__info" id="education">
@@ -192,7 +186,6 @@
                     </a>
                 </div>
             </div>
-          
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
