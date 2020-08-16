@@ -1,5 +1,5 @@
 const linkToMyCv = new Vue ({
-    el:".header__button",
+    el:".description__button",
     data: {
         url:"docs/cv.pdf"
     }
@@ -23,6 +23,7 @@ var demo = new Vue({
             this.active = item;
             $('.content__info').hide()
             $(`#${item}`).show()
+            // $(`.content__+${item}`).css("background","#E35885")
 		}
 	}
 });
