@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Aбдранбаев Азамат</h1>
+            <h3 class="header__text">Talanted Web developer</h3>
+            <!-- <a class="header__button" href="docs/cv.pdf" target="_blank" download>
+                <p class="header__text header__text--inner--button">Download My Cv</p>
+            </a> -->
+            <a class="header__button" v-bind:href="url" target="_blank">
+                <p class="header__text header__text--inner--button">Download My Cv</p>
+            </a>
+        </header>
+        <div class="content">
+            <div class="content__main">
+                <!-- Меню получает значение "active" в качестве класса. -->
+                <!-- Чтобы предотвратить "прыжки" страницы при изменении ссылки, используем модификатор "prevent" (сокращение для preventDefault). -->
+                <nav v-bind:class="active" v-on:click.prevent>
+                    <!-- Когда происходит нажатие на ссылку, вызываем метод makeActive, определенный как js-сущность Vue. -->
+                    <a href="#" class="content__about" v-on:click="makeActive('about')">About me</a>
+                    <a href="#" class="content__expertise" v-on:click="makeActive('expertise')">Expertise</a>
+                    <a href="#" class="content__education" v-on:click="makeActive('education')">Education</a>
+                    <a href="#" class="content__vue" v-on:click="makeActive('vue')">Vue.js</a>
+                    <a href="#" class="content__bpm" v-on:click="makeActive('bpm')">BPM</a>
+                </nav>
+            
+                 <!-- Шаблонное значение будет заменено на значение переменной "active". Все изменения будут автоматически отражены на странице. -->
+            </div>
+            <div class="content__info" id="about">
+                <div class="content__items">
+                    <span class="content__line"></span>
+                    <h3  class="content__title content__title--small"> About me</h3>
+                    <p class="content__link">
+                        <b>Birthday: </b>
+                        18/05/1993
+                    </p>
+                    <p class="content__link">
+                        <b>Phone: </b>
+                        <a class="content__link" href="tel:+77755577041">+7 775 55 77 041</a>
+                    </p>
+                    <p class="content__link">
+                        <b>Email: </b>
+                        <a class="content__link" href="mailto:aabdranbayev@gmail.com">aabdranbayev@gmail.com</a>
+                    </p>
+                    <p class="content__link">
+                        <b>Adresse: </b>
+                        Kazakhstan,Almaty
+                    </p>
+                </div>
+            </div>
+            <div class="content__info" id="expertise">
+                <div class="content__items">
+                    <span class="content__line"></span>
+                    <h3  class="content__title content__title--small">Expertise</h3>
+                    <div class="content__inner">
+                        <p class="content__link content__link--expertise--block">
+                            <b>МФО "ZAEM DAEM"</b>
+                            <br>
+                            01/2020-02/2020
+                            <br>
+                            Анализ целевой аудитории,
+                            <br>
+                            Построение модели выдачи кредитов
+                        </p>
+                        <p class="content__link content__link--expertise--block">
+                            <b>ТОО "ABN TYRES SAUDA"(ПРОЕКТНАЯ РАБОТА)</b>
+                            <br>
+                            01/2020-02/2020
+                            <br>
+                            Регламентация бизнес процессов,
+                            <br>
+                            Анализ продаж
+                        </p>
+                        <p class="content__link content__link--expertise--block">
+                            <b>ТОО "HALYK ИНКАССАЦИЯ"</b>
+                            <br>
+                            11/2018-11/2019
+                            <br>
+                            Координация и контроль деятельности филиалов
+                            <br>
+                            Анализ клиентского сегмента
+                        </p>
+                        <p class="content__link content__link--expertise--block">
+                            <b>ИП GAME OVER (АНАЛИТИК)</b>
+                            <br>
+                            04/2018-09/2018
+                            <br>
+                            Анализ продаж,
+                            <br>
+                            ABC Анализ
+                        </p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="content__info" id="education">
+                <div class="content__items">
+                    <span class="content__line"></span>
+                    <h3  class="content__title content__title--small">Education</h3>
+                    <div class="content__inner">
+                        <p class="content__link content__link--expertise--block">
+                            <b>ФИЗИКО-МАТЕМАТИЧЕСКИЙ ЛИЦЕЙ № 90</b>
+                            <br>
+                            2000-2011
+                        </p>
+                        <p class="content__link content__link--expertise--block">
+                            <b>АУЭС</b>
+                            <br>
+                            2011-2015
+                        </p>
+                        <p class="content__link content__link--expertise--block">
+                            <b>STEPICK/BIOINFORMATICS INSTITUTE</b>
+                            <br>
+                            Программирование на Python (01/2020)
+                        </p>
+                        <p class="content__link content__link--expertise--block">
+                            <b>COURSERA/HIGHER SCHOOL OF ECONOMICS</b>
+                            <br>
+                            Основы программирования Python (01/2020)
+                        </p>
+                        <p class="content__link content__link--expertise--block">
+                            <b>ATTRACTOR SCHOOL</b>
+                            <br>
+                            Full stack  (03/2020-05/2021)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content__info" id="vue">
+                <div class="content__items">
+                    1
+                </div>
+            </div>
+            <div class="content__info" id="bpm">
+                <div class="content__items">
+                    2
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="Js/jquery-3.5.1.js"></script>
+    <script src="Js/tools.js"></script>
+</body>
+</html>
