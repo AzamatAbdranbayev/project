@@ -4,6 +4,12 @@ const linkToMyCv = new Vue ({
         url:"docs/cv.pdf"
     }
 })
+const linkToMyRegulation = new Vue ({
+    el:".content__button",
+    data: {
+        url:"docs/regulation.pdf"
+    }
+})
 // Создаем новую сущность Vue.js
 const demo = new Vue({
 	// DOM элемент, к которому прикреплена сущность

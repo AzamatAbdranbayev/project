@@ -70,4 +70,12 @@
         }
         margin:10px 0;
     }
+    &__button {
+        width: 100px;
+        padding:5px;
+        border-radius: 10px;
+        text-align: center;
+        background: #0073cc;
+        @include text-style (15px,white)
+    }
 }
