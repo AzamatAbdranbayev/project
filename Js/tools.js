@@ -5,8 +5,7 @@ const linkToMyCv = new Vue ({
     }
 })
 // Создаем новую сущность Vue.js
-var demo = new Vue({
-	
+const demo = new Vue({
 	// DOM элемент, к которому прикреплена сущность
 	el: '.content__main',
 
@@ -23,13 +22,14 @@ var demo = new Vue({
             this.active = item;
             $('.content__info').hide()
             $(`#${item}`).show()
-            // $(`.content__+${item}`).css("background","#E35885")
 		}
 	}
 });
 
-const ShowBLock = new Vue ({
-    el:".info_block",
-
+// Создаем для объяснения шаблона Vue.js
+const myTemplate = new Vue({
+    el: '#app',
+    data: {
+        status: "on"
+    },
 })
-console.log(ShowBLock.children)

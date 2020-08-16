@@ -74,6 +74,18 @@ a {
   font-size: 15px;
   color: white;
 }
+.content__answers {
+  margin: 10px 0;
+}
+.content__answers--title {
+  font-size: 20px;
+  color: black;
+}
+.content__answers--text {
+  font-size: 15px;
+  color: gray;
+  max-width: 60%;
+}
 
 .description {
   position: relative;

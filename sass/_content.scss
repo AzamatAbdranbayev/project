@@ -60,4 +60,14 @@
         background: #0073cc;
         @include text-style (15px,white)
     }
+    &__answers {
+        &--title {
+            @include text-style (20px,black);
+        }
+        &--text {
+            @include text-style (15px,gray);
+            max-width: 60%;
+        }
+        margin:10px 0;
+    }
 }
